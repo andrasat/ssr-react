@@ -21,8 +21,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:dev": "webpack",
-    "start": "npm run build:dev && babel-node -- server/index.js",
-    "dev": "npm run build:dev && nodemon server/index.js --exec babel-node --"
+    "build": "babel server -d dist",
+    "serve": "node dist/index.js",
+    "start": "npm run build:dev && npm run build && npm run serve",
+    "dev": "npm run build:dev && nodemon server/index.js --exec babel-node"
   },
   "repository": {
     "type": "git",
