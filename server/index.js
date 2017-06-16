@@ -1,7 +1,7 @@
 import express from 'express';
 import webpack from 'webpack';
 
-import render = from '../dist/assets/SSR';
+const render = require('../dist/assets/SSR');
 
 const port = process.env.PORT || 3000;
 const app = express();
