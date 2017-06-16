@@ -10,5 +10,5 @@ export default ({ body, title }) => {
       <div id="root">${body}</div>
     </body>
   </html>
-  `
+  `;
 }
